@@ -33,11 +33,14 @@ int main()
 Note: you have to write an image to the MJPEGWriter class before start the server.
 
 ## Compiling
-Compile with C++11, OpenCV libraries and pthread:
+Compile with C++17, OpenCV4.xx libraries and pthread:
 
 
 ```sh
-g++ MJPEGWriter.cpp main.cpp -o MJPEG -lpthread -lopencv_highgui -lopencv_core -std=c++11
+cd repo_path
+mkdir build && cd build
+cmake ..
+make 
 ```
 
 ## Roadmap
